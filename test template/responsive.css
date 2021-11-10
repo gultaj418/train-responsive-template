@@ -1,0 +1,432 @@
+@media only screen and (min-width: 1441px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/*--------------------Explore section responsiveness----------------*/
+
+@media only screen and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  .explore-background {
+    left: calc(90% - 800px);
+    position: initial;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #train {
+    margin: 0;
+    margin-top: 80px;
+  }
+
+  .explore-content {
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  #subtitle {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .explore-form {
+    width: 100%;
+    height: 400px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+  .schedule {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #schedule {
+    width: 500px;
+  }
+
+  #enter-station,
+  #out,
+  #return {
+    width: 100%;
+  }
+
+  #input,
+  #where {
+    width: calc(100%-90px);
+  }
+
+  .explore-background {
+    width: 100%;
+  }
+
+  .options {
+    width: 90%;
+    margin-left: 0;
+    margin-left: 3%;
+  }
+
+  #options-bar {
+    margin-left: 0;
+  }
+
+  .add-passenger {
+    width: 90%;
+  }
+
+  .detailed-info {
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  #add-passenger {
+    width: 100%;
+  }
+
+  #out #return {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 499px) {
+  #navbar-img {
+    width: 180px;
+  }
+
+  #nav-icon {
+    padding-left: 10%;
+  }
+
+  .nav-tools {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .explore-background {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  #train {
+    width: 100%;
+  }
+
+  .explore-form {
+    margin-left: 15px;
+    width: 90%;
+    padding-bottom: 55%;
+  }
+
+  .schedule {
+    width: 100%;
+    margin-left: 0;
+    height: 250px;
+  }
+  #input {
+    width: 250px;
+    /* margin-left: 5px; */
+  }
+
+  #where {
+    margin-right: 5px;
+    width: 250px;
+  }
+
+  #ticket {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .options {
+    width: 90%;
+    margin-left: 0;
+    margin-left: 3%;
+  }
+
+  #options-bar {
+    margin-left: 0;
+    padding-right: 10px;
+  }
+
+  .detailed-info {
+    width: 100%;
+    margin-left: 5%;
+  }
+
+  #add-passenger {
+    width: 100%;
+  }
+
+  #time-ticket-button {
+    width: 90%;
+  }
+
+  #interrelated-line-img {
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+
+  .second-option-bar {
+    margin-top: 20px;
+  }
+
+  .avoid {
+    width: 50px;
+  }
+
+  #enter-station {
+    width: 100px;
+  }
+}
+
+/*------------------------------------------------------------------*/
+
+/*--------------------Discount board responsiveness-------------------------------*/
+
+@media only screen and (min-width: 1100px) and (max-width: 1400px) {
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 88%;
+    /* height: 800px; */
+  }
+
+  #girl {
+    top: 10%;
+    right: 6%;
+  }
+
+  .info-pictures #train {
+    top: 18%;
+    right: 25%;
+  }
+
+  .circle-white {
+    top: 16%;
+    right: 20%;
+  }
+
+  .circle-lemon {
+    top: 64%;
+    right: 15%;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+  .board {
+    height: 800px;
+  }
+
+  #girl {
+    top: 36%;
+    right: 17%;
+  }
+
+  .info-pictures #train {
+    top: 52%;
+    right: 45%;
+  }
+
+  .circle-white {
+    top: 39%;
+    right: 38%;
+  }
+
+  .circle-lemon {
+    top: 67%;
+    right: 30%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .board {
+    height: 600px;
+  }
+
+  #girl {
+    width: 300px;
+    height: 200px;
+    top: 50%;
+  }
+
+  .circle-white {
+    top: 53%;
+    right: 33%;
+  }
+
+  .circle-lemon {
+    top: 71%;
+    right: 32%;
+  }
+  .circle-white,
+  .circle-lemon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .info-pictures #train {
+    width: 200px;
+    top: 47%;
+    right: 42%;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 499px) {
+  #cta {
+    margin-top: 40px;
+    width: 200px;
+  }
+
+  .board {
+    height: 500px;
+  }
+
+  #girl {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+  }
+
+  .circle-white {
+    top: 53%;
+    right: 33%;
+  }
+
+  .circle-lemon {
+    top: 74%;
+    right: 26%;
+  }
+  .circle-white,
+  .circle-lemon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .info-pictures #train {
+    width: 150px;
+    top: 47%;
+    right: 39%;
+  }
+}
+
+/*--------------------------------------------------------------*/
+
+/*------------------------FAQ section responsivenss-----------------*/
+@media only screen and (max-width: 800px) {
+  .faq {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq-initial-card {
+    margin-bottom: 40px;
+  }
+
+  .faq-part {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  #laptop {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 399px) {
+  #laptop {
+    width: 250px;
+  }
+}
+
+/*-----------------------------------------------------------------------*/
+
+/*------------------------App section responsiveness--------------------------------*/
+
+@media only screen and (max-width: 950px) {
+  .train-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .app-path {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .app-content {
+    margin-bottom: 20px;
+  }
+
+  #mobile {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 560px) {
+  #apple,
+  #google {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 449px) {
+  #apple,
+  #google {
+    width: 120px;
+  }
+
+  #mobile {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*----------------------------------------------------------------------*/
+
+/*--------------------------Review section responsivenes------------------*/
+
+@media only screen and (max-width: 1100px) {
+  .review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .review .review-content {
+    width: 60%;
+  }
+
+  .review .review-card {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
+  .right-left-click {
+    top: 0%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .right-left-click {
+    display: flex;
+    justify-content: center;
+    top: 36%;
+    left: 75%;
+  }
+}
+
+/*----------------------------------------------------------------------*/
