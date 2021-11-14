@@ -4,6 +4,34 @@
   }
 }
 
+@media screen and (max-width: 860px) {
+  #nav-main,
+  #navbar-train,
+  #sign-in {
+    display: none;
+  }
+  #nav-icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 841px) and (min-width: 300px) {
+  #navbar-img {
+    justify-content: center;
+  }
+
+  #nav-icon {
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #navbar-img {
+    width: 200px;
+    height: 70px;
+  }
+}
+
 /*--------------------Explore section responsiveness----------------*/
 
 @media only screen and (max-width: 1199px) {
@@ -34,13 +62,21 @@
   }
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1998px) {
+  .explore-form {
+    margin-left: 10%;
+  }
+}
+
 @media only screen and (min-width: 500px) and (max-width: 800px) {
   .explore-form {
-    width: 100%;
+    width: 80%;
     height: 400px;
-    margin-left: 0;
+    margin-left: 24px;
     margin-bottom: 30px;
     padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .schedule {
     width: 100%;
@@ -48,18 +84,22 @@
   }
 
   #schedule {
-    width: 500px;
+    width: 400px;
   }
 
-  #enter-station,
+  #enter-station {
+    width: 100%;
+  }
+
   #out,
   #return {
-    width: 100%;
+    width: 130px;
   }
 
   #input,
   #where {
-    width: calc(100%-90px);
+    /* width: calc(100%-90px); */
+    width: 180px;
   }
 
   .explore-background {
@@ -77,7 +117,7 @@
   }
 
   .add-passenger {
-    width: 90%;
+    width: 350px;
   }
 
   .detailed-info {
@@ -91,6 +131,13 @@
 
   #out #return {
     margin-right: 0;
+  }
+
+  .avoid {
+    /* padding-left: 30px;
+    padding-right: 30px; */
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -128,14 +175,20 @@
     margin-left: 0;
     height: 250px;
   }
-  #input {
+
+  #out,
+  #return {
     width: 250px;
+  }
+
+  #input {
+    width: 150px;
     /* margin-left: 5px; */
   }
 
   #where {
     margin-right: 5px;
-    width: 250px;
+    width: 150px;
   }
 
   #ticket {
@@ -161,9 +214,8 @@
   }
 
   #add-passenger {
-    width: 100%;
+    width: 250px;
   }
-
   #time-ticket-button {
     width: 90%;
   }
@@ -179,10 +231,22 @@
 
   .avoid {
     width: 50px;
+
+    /* padding-left: 30px;
+      padding-right: 30px; */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #avoid-span {
   }
 
   #enter-station {
-    width: 100px;
+    width: 80px;
+    margin-right: 10px;
+  }
+  #green-tick {
+    padding-left: 20px;
   }
 }
 
@@ -338,7 +402,12 @@
 
 @media only screen and (min-width: 400px) and (max-width: 800px) {
   #laptop {
-    width: 400px;
+    width: 90%;
+    margin-left: -8%;
+  }
+  .faq .faq-initial-card button {
+    width: 90%;
+    margin-left: -8%;
   }
 }
 
@@ -348,6 +417,12 @@
   }
 }
 
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .faq .faq-initial-card button {
+    width: 90%;
+    margin-left: -8%;
+  }
+}
 /*-----------------------------------------------------------------------*/
 
 /*------------------------App section responsiveness--------------------------------*/
@@ -380,6 +455,10 @@
   #google {
     width: 200px;
   }
+
+  .train-app .app-content {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 280px) and (max-width: 449px) {
@@ -392,13 +471,53 @@
     width: 200px;
     height: 200px;
   }
+  .faq .faq-initial-card button {
+    width: 100%;
+  }
 }
 
 /*----------------------------------------------------------------------*/
 
 /*--------------------------Review section responsivenes------------------*/
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1350px) and (max-width: 1620px) {
+  .punct {
+    right: 20%;
+  }
+  .review .review-card {
+    width: 15%;
+  }
+
+  .right-left-click {
+    right: 12%;
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1350px) {
+  .punct {
+    right: 30%;
+  }
+  .review .review-card {
+    width: 20%;
+  }
+
+  .right-left-click {
+    right: 2%;
+  }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1300px) {
+  .right-left-click {
+    top: 0%;
+    right: 0%;
+  }
+
+  .review .review-card {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1100px) {
   .review {
     display: flex;
     flex-wrap: wrap;
@@ -412,21 +531,257 @@
   .review .review-card {
     width: 30%;
   }
-}
 
-@media only screen and (min-width: 1100px) and (max-width: 1300px) {
-  .right-left-click {
-    top: 0%;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
   .right-left-click {
     display: flex;
     justify-content: center;
     top: 36%;
-    left: 75%;
+    left: 40%;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+  .punct {
+    right: 35%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1100px) {
+  .right-left-click {
+    left: 80%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+  #review-btn {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+  .punct {
+    right: 24%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+  #review-btn {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 700px) {
+  .right-left-click {
+    top: 33%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 650px) {
+  .review .review-content h4 {
+    margin-top: 60px;
+  }
+
+  .review .review-content {
+    margin-left: 20%;
+  }
+
+  #review-btn {
+    width: 70%;
+    margin-left: -20%;
+  }
+}
+
+@media only screen and (max-width: 649px) {
+  #review-btn {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 650px) {
+  .review {
+    flex-flow: column wrap;
+  }
+  .review .review-card {
+    width: 52.29%;
+    margin-left: 20%;
+  }
+  .review {
+    background-color: #00a88f;
+  }
+
+  .review-first {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 650px) {
+  #review-btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 650px) {
+  .right-left-click {
+    top: 30%;
+  }
+  #review-btn {
+    margin-left: 5%;
+    width: 80%;
+  }
+  .review .review-first {
+    margin-top: 100px;
+  }
+  .punct {
+    right: 35%;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .punct {
+    right: 40%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  .right-left-click {
+    top: 31%;
+    right: 27%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .review .review-card {
+    width: 70%;
+  }
+
+  .review-first {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 550px) {
+  .right-left-click {
+    top: 33%;
+    right: 13%;
+  }
+}
+
+@media only screen and (min-width: 279px) and (max-width: 550px) {
+  .review {
+    background-color: #00a88f;
+  }
+
+  #review-btn {
+    width: 100%;
+    margin-top: 85%;
+    margin-left: -4%;
+  }
+  .review-first {
+    margin-left: 0;
+  }
+
+  .review .review-card {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .review {
+    flex-flow: column wrap;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+  .punct {
+    right: 28%;
+  }
+
+  .right-left-click {
+    top: 30%;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 320px) {
+  .punct {
+    right: 20%;
+  }
+
+  .right-left-click {
+    top: 33%;
+    right: 30%;
+  }
+
+  #review-btn {
+    width: 200%;
+    margin-left: 5%;
+  }
+
+  .review .review-first {
+    margin-top: 40%;
   }
 }
 
 /*----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) and (max-width: 950px) {
+  .social-account {
+    margin-left: 20px;
+  }
+
+  .first-footer {
+    flex-wrap: wrap;
+  }
+
+  .first-column {
+    width: 50%;
+  }
+
+  .second-column {
+    width: 30%;
+    padding-left: 20%;
+  }
+
+  .third-column {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 600px) {
+  .social-account {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .first-footer {
+    flex-wrap: wrap;
+  }
+
+  .first-column {
+    width: 100%;
+    padding-left: 20%;
+  }
+
+  .second-column {
+    width: 80%;
+    padding-left: 20%;
+  }
+
+  .third-column {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5%;
+  }
+
+  .first-footer .first-column img {
+    width: 240px;
+    margin-left: -40px;
+  }
+
+  .second-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .second-footer p {
+    padding-right: 20px;
+  }
+}

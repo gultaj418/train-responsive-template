@@ -2,6 +2,12 @@
   margin: 0 auto;
 }
 /*--------------------------------------Navbar section css starts-----------------------------------------------------------------------------*/
+header {
+  height: 60px;
+}
+.nav-tools {
+  position: relative;
+}
 
 #navbar-img {
   width: 290px;
@@ -17,7 +23,9 @@
   display: none;
   padding-top: 30px;
   padding-left: 37%;
-
+  position: absolute;
+  right: 10%;
+  top: -10%;
   border-radius: 10px;
 }
 
@@ -73,7 +81,7 @@
 }
 
 #explore {
-  margin-top: 6%;
+  margin-top: 5%;
 }
 
 .explore-form {
@@ -82,9 +90,9 @@
   background-color: #ffffff;
   border-radius: 40px;
   display: inline-block;
-  margin-top: 8%;
+  margin-top: 11%;
 
-  margin-left: 15%;
+  margin-left: 10%;
   position: relative;
   z-index: 9999;
   box-shadow: 5px 5px 5px #bae7e0;
@@ -114,6 +122,8 @@
   width: 100px;
   height: 40px;
   background-color: #f1f2f6;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .station {
@@ -635,14 +645,23 @@ p {
   background-color: white;
   border-radius: 20px;
   box-shadow: 3px 3px #dedede;
-
-  position: relative;
+  /* position: relative; */
 }
 
+.happen {
+  position: relative;
+}
 .review-first {
   margin-left: 10%;
   margin-right: 20px;
 }
+
+/* .happen-container {
+  background-color: yellow;
+  width: 30%;
+  margin: 0 auto;
+  position: relative;
+} */
 
 #review-btn {
   margin-top: 70px;
@@ -672,11 +691,12 @@ h6 {
   padding-right: 25px;
 }
 
-.review .review-card img {
+.happen img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-left: 32%;
+
   margin-top: 10%;
 }
 
@@ -685,8 +705,8 @@ h6 {
   height: 5px;
   background-color: #0054a6;
   position: absolute;
-  bottom: 12%;
-  left: 38%;
+  bottom: 20%;
+  margin-left: 5%;
 }
 
 .punct {
@@ -695,8 +715,10 @@ h6 {
   border-radius: 50%;
   background-color: #0054a6;
   position: absolute;
-  top: 22%;
-  right: 32%;
+
+  right: 30%;
+  bottom: 0%;
+
   color: white;
 }
 
@@ -711,7 +733,11 @@ h6 {
   justify-content: space-evenly;
 }
 
-#country-journey li {
+.popular {
+  margin-bottom: 30px;
+}
+
+.country-journey li {
   color: #00a88f;
   margin-bottom: 5px;
 }
@@ -782,19 +808,22 @@ h6 {
 .first-footer {
   background-color: #00a88f;
   width: auto;
-  height: 280px;
-  margin-top: 20px;
+
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
+  padding-bottom: 60px;
 }
 
 .first-footer .first-column {
   width: 40%;
+  /* padding-right: 30px; */
 }
 
 .first-footer .first-column p {
   margin-left: 13%;
-  margin-bottom: 10px;
+  padding-bottom: 30px;
+  margin-right: 30px;
   color: white;
 }
 
@@ -802,6 +831,7 @@ h6 {
   margin-left: 13%;
   margin-top: 2%;
   margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 @font-face {
@@ -829,6 +859,7 @@ h6 {
   display: flex;
   flex-direction: row;
   margin-left: 5%;
+  padding-top: 30px;
 }
 
 .social-account {
@@ -862,10 +893,12 @@ h6 {
 .second-column {
   width: 20%;
   color: white;
+  padding-right: 60px;
+  padding-top: 100px;
 }
 
 .second-column ul li {
-  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .second-column ul :nth-child(1) {
@@ -880,10 +913,13 @@ h6 {
 
 .third-column {
   width: 30%;
+  padding-top: 110px;
+  padding-right: 30px;
 }
 .third-column ul li {
   margin-top: 5%;
   margin-bottom: 15px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -901,7 +937,7 @@ h6 {
   padding-top: 1%;
   margin-right: 10%;
   width: 100%;
-  height: 20px;
+  padding-bottom: 20px;
   background-color: #028d78;
   color: white;
 
@@ -912,23 +948,36 @@ h6 {
 
 /*--------------------------------------------------------------Second-footer section css ends ---------------------------------------------------- */
 
-@media screen and (max-width: 860px) {
-  #nav-main,
-  #navbar-train,
-  #sign-in {
-    display: none;
-  }
-  #nav-icon {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 841px) and (min-width: 300px) {
-  #navbar img {
+@media only screen and (min-width: 400px) and (max-width: 800px) {
+  .journeys {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
   }
 
-  #nav-icon {
-    padding-left: 10%;
+  .country-journey {
+    width: 40%;
+    margin-bottom: 20px;
+    margin-left: 10%;
   }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+  .journeys {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .country-journey {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    margin-top: 20px;
+  }
+}
+
+.popular-heading h4,
+h2 {
+  padding-left: 10%;
+  padding-right: 10%;
 }
